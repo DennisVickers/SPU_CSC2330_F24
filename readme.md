@@ -1,3 +1,3 @@
-**CSC 2431 Data Structures II**
+**CSC 2330 Data Structures and Programming**
 
 This repo is used to share the code during lectures
