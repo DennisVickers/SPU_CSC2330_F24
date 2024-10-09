@@ -21,6 +21,17 @@ int main() {
    // Using Functions:
    int fx = sqrt(16) + pow(2, 3);
    cout << "Function calls: " << fx << endl;
+   
+   // Modulo
+   int r3 = (a + 3) % b;
+   cout << "Modulo: " << r3 << endl;
+   
+   // Integer math
+   double r4 = b / a;
+   cout << "Integer math: " << r4 << endl;
+   r4 = b / static_cast<double>(a);
+   cout << "Integer math: " << r4 << endl;
+   
 
    return 0;
 }
