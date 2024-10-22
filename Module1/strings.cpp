@@ -15,9 +15,14 @@ int main() {
 
    // Concatenate strings
    string fullName = firstName + " " + lastName;
+   
+   /*
+    * Alternatly use getline()
+	*/
+	// getline(cin, fullName);
 
    // Output the full name and its length
-   cout << "Your full name is: " << fullName << std::endl;
+   cout << "Your full name is: " << fullName << endl;
    cout << "It has " << fullName.length() << " characters.\n";
 
    return 0;
