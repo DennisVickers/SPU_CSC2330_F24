@@ -55,16 +55,11 @@ int main() {
    cout << "!B IS ";
    cout << ((!B)?"TRUE":"FALSE") << endl;
 
-//    // Using NOT (!) operator
-//    cout << "\nLogical NOT (!) Operator:" << endl;
-//    cout << "!A = " << ((!A)?"TRUE":"FALSE") << endl;  // NOT operation
-//    cout << "!B = " << ((!B)?"TRUE":"FALSE") << endl;
-//
-//    // Compound logical operations
-//    cout << "\nCompound Logical Operations:" << endl;
-//    cout << "!(A && B) = " << !(A && B) << endl;  // NOT(AND)
-//    cout << "A || (A && B) = " << (A || (A && B)) << endl;  // OR with AND
-//    cout << "(A && B) || (!B) = " << ((A && B) || (!B)) << endl;  // AND with NOT
+   // Compound logical operations
+   cout << "\nCompound Logical Operations:" << endl;
+   cout << "!(A && B) = " << !(A && B) << endl;  // NOT(AND)
+   cout << "A || (A && B) = " << (A || (A && B)) << endl;  // OR with AND
+   cout << "(A && B) || (!B) = " << ((A && B) || (!B)) << endl;  // AND with NOT
 
-    return 0;
+   return 0;
 }
