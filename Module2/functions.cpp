@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cmath>  // For M_PI (the value of π)
 
 using namespace std;
@@ -9,6 +10,8 @@ int findMax(int a, int b);                    // Function to find maximum of two
 void greet(string name);                      // Function to print a greeting message
 void swap(int &a, int &b);                    // Function to swap two numbers using pass-by-reference
 int factorial(int n);                         // Recursive function to calculate factorial
+int add(int a, int b);                        // Overloaded function
+float add(float a, float b);                  // Overloaded function
 
 int main() {
    // Example 1: Calculate area of a circle
@@ -41,6 +44,18 @@ int main() {
    cout << "Enter a number to calculate its factorial: ";
    cin >> num;
    cout << "Factorial of " << num << " is: " << factorial(num) << endl;
+   
+   // Example 6: Overloaded functions
+   int a, b;
+   cout << "Enter two integers: ";
+   cin >> a >> b;
+   cout << a << " + " << b << " = " << add(a, b) << endl;
+
+   float af, bf;
+   cout << "Enter two floats: ";
+   cin >> af >> bf;
+   cout << fixed << setprecision (1);
+   cout << af << " + " << bf << " = " << add(af, bf) << endl;
 
    return 0;
 }
@@ -77,3 +92,13 @@ int factorial(int n) {
       return n * factorial(n - 1);
    }
 }
+
+// Overloaded add functions
+int add(int a, int b) {
+  return a + b;
+}
+
+float add(float a, float b) {
+  return a + b;
+}
+
