@@ -8,22 +8,22 @@
 using namespace std;
 
 int main() {
-  // Single Inheritance
-  cout << "\nSingle Inheritance\n";
-  Car myCar;
-  myCar.move();
+   // Single Inheritance
+   cout << "\nSingle Inheritance\n";
+   Car myCar;
+   myCar.move();
 
-  // Multiple Inheritance
-  cout << "\nMultiple Inheritance\n";
-  Auto myAuto;
-  myAuto.start();
-  myAuto.roll();
+   // Multiple Inheritance
+   cout << "\nMultiple Inheritance\n";
+   Auto myAuto;
+   myAuto.start();
+   myAuto.roll();
 
-  // Leveled Inheritance
-  cout << "\nLeveled Inheritance\n";
-  Dog myDog;
-  myDog.breathe();
-  myDog.eat();
+   // MultiLeveled Inheritance
+   cout << "\nLeveled Inheritance\n";
+   Dog myDog;
+   myDog.breathe();
+   myDog.eat();
 
   // Hierarchial Inheritance
   cout << "\nHierarchial Inheritance\n";
@@ -41,8 +41,10 @@ int main() {
 
   // Virtual functions
   cout << "\nVirtual Functions\n";
-  Animals* animals = new Cat();
-  animals->speak();   // Outputs "Meow!" because of virual function
+  Animals* animals;    // Base class pointer
+  Cat myCat;           // Derived class object
+  animals = &myCat;    // Base pointer points to Derived object
+  animals->speak();    // Outputs "Meow!" because of virual function
 
   return 0;
 }

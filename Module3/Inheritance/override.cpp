@@ -2,14 +2,14 @@
 
 class Shelter {
 public:
-  void access() {
-    std::cout << "Door\n";
-  }
+   void access() {
+      std::cout << "Door\n";
+   }
 };
 
 class Tent : public Shelter {
 public:
-  void access() {
-    std::cout << "Flap\n";  // Overrides Shelter's access()
-  }
+   void access() {
+      std::cout << "Flap\n";  // Overrides Shelter's access()
+   }
 };
